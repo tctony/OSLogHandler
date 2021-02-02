@@ -9,6 +9,15 @@
           "revision": "173f567a2dfec11d74588eea82cecea555bdc0bc",
           "version": "1.4.0"
         }
+      },
+      {
+        "package": "SwiftLogFormatter",
+        "repositoryURL": "https://github.com/tctony/SwiftLogFormatter.git",
+        "state": {
+          "branch": null,
+          "revision": "7c8d7fb5c5e5551a9ae159c118696953f5040820",
+          "version": "0.1.0"
+        }
       }
     ]
   },

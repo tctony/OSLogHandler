@@ -1,6 +1,7 @@
 import XCTest
 @testable import OSLogHandler
 @testable import Logging
+@testable import LogFormatter
 
 var gLogger: Logger!
 
@@ -31,7 +32,7 @@ final class OSLogHandlerTests: XCTestCase {
 
     func testShortFileName() {
         let logger = Logger(label: "testShortFileName") { (label) -> LogHandler in
-            return OSLogHandler(label: label, formatter: OSLogDefaultFormatter(shortFileName: { $0 }))
+            return OSLogHandler(label: label, formatter: LogDefaultFormatter(shortFileName: { $0 }))
         }
         logger.info("log with full filename")
     }

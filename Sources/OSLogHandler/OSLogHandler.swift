@@ -8,13 +8,14 @@
 import Foundation
 import struct Logging.Logger
 import protocol Logging.LogHandler
+import LogFormatter
 import os
 
 public struct OSLogHandler: LogHandler {
 
     public var logLevel: Logger.Level = .info
 
-    public var formatter: OSLogFormatter
+    public var formatter: LogFormatter
 
     public let label: String
 
@@ -22,7 +23,7 @@ public struct OSLogHandler: LogHandler {
 
     public init(label: String,
                 category: String = "",
-                formatter: OSLogFormatter = OSLogDefaultFormatter()) {
+                formatter: LogFormatter = LogDefaultFormatter()) {
         self.label = label
         self.formatter = formatter
         
